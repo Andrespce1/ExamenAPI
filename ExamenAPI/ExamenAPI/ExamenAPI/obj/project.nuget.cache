@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HN9PtsBWzVWLkYuCidADjy5gOsdtFV47rNKxlo34sszq29v5zk3ZfLpw02NbT3xd1/dWw+0ZOk5CLZ6mrWgkmQ==",
+  "dgSpecHash": "s7pQDutmmpueFIkc5PKALTpEatwgulUH9ZidLRwax7q0MqS5WI8SL20EeCjrBlfaXFzDZnoKm6oVdkftMPTBCA==",
   "success": true,
   "projectFilePath": "D:\\septimo\\Aplicaciones moviles\\proyectos visual\\ExamenAPI\\ExamenAPI\\ExamenAPI\\ExamenAPI.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\erick\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\octokit\\6.0.0\\octokit.6.0.0.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\refit\\6.3.2\\refit.6.3.2.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",

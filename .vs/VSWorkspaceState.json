@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ExamenAPI",
+    "\\ExamenAPI\\ExamenAPI",
+    "\\ExamenAPI\\ExamenAPI\\ExamenAPI"
   ],
-  "SelectedNode": "\\C:\\Users\\erick\\Source\\Repos\\ExamenAPI",
+  "SelectedNode": "\\ExamenAPI\\ExamenAPI\\ExamenAPI\\MainPage.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

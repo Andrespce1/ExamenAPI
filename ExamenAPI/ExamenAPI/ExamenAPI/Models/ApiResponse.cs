@@ -18,3 +18,4 @@ public class ApiResponse<T>
     [JsonProperty("data")]
     public List<T> Data { get; set; }
 }
+

@@ -20,11 +20,11 @@
             </Label.FormattedText>
         </Label>
         <Label x:Name="lblDatos" Text="Id"></Label>
-        <Entry Placeholder="Id" x:Name="txtId"/>
-        <Entry Placeholder="Nombre" x:Name="txtNombre"/>
-        <Entry Placeholder="Apellido" x:Name="txtApellido"/>
-        <Entry Placeholder="Email" x:Name="txtEmail"/>
-        <Entry Placeholder="Avatar" x:Name="txtAvatar"/>
+        <Entry Placeholder="Id" x:Name="txtId" />
+        <Entry Placeholder="Nombre" x:Name="txtNombre" />
+        <Entry Placeholder="Apellido" x:Name="txtApellido" />
+        <Entry Placeholder="Email" x:Name="txtEmail" />
+        <Entry Placeholder="Avatar" x:Name="txtAvatar" />
         <Button Text="Leer datos" Clicked="Button_Clicked"></Button>
         <Button Text="Insertar" Clicked="Button_Clicked_1"></Button>
         <Button Text="Actualizar" Clicked="Button_Clicked_2"></Button>

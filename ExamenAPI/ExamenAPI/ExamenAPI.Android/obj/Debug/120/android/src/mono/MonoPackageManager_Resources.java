@@ -7,6 +7,7 @@ public class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"Microsoft.Bcl.AsyncInterfaces.dll",
 		"Newtonsoft.Json.dll",
+		"Octokit.dll",
 		"Refit.dll",
 		"System.Net.Http.Json.dll",
 		"System.Text.Encodings.Web.dll",

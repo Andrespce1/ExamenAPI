@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "R1dZjMnVfzC47mm2Hf8GLaUrnR6eKwmNm9bCtbGUESj/N3rbZiALgc8LTSeX4gq+pb+GzBT5uvV0TY/YEEKdYw==",
+  "dgSpecHash": "Mni4f0vl+eK7MxqpBLs9PSn7DwAfKbT68QodWLVWPlEleKhAMh9VoQ00xIQoSqWY9hBl3xhgtG6eAi96qSofiQ==",
   "success": true,
   "projectFilePath": "D:\\septimo\\Aplicaciones moviles\\proyectos visual\\ExamenAPI\\ExamenAPI\\ExamenAPI.iOS\\ExamenAPI.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\erick\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\octokit\\6.0.0\\octokit.6.0.0.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\refit\\6.3.2\\refit.6.3.2.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
