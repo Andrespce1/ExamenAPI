@@ -1,0 +1,15 @@
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\bin\Debug\netstandard2.0\ExamenAPI.deps.json
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\bin\Debug\netstandard2.0\ExamenAPI.dll
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\bin\Debug\netstandard2.0\ExamenAPI.pdb
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\obj\Debug\netstandard2.0\ExamenAPI.csproj.AssemblyReference.cache
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\obj\Debug\netstandard2.0\ExamenAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\obj\Debug\netstandard2.0\ExamenAPI.AssemblyInfoInputs.cache
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\obj\Debug\netstandard2.0\ExamenAPI.AssemblyInfo.cs
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\obj\Debug\netstandard2.0\ExamenAPI.csproj.CoreCompileInputs.cache
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\obj\Debug\netstandard2.0\XamlC.stamp
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\obj\Debug\netstandard2.0\ExamenAPI.dll
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\obj\Debug\netstandard2.0\refint\ExamenAPI.dll
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\obj\Debug\netstandard2.0\ExamenAPI.pdb
+D:\septimo\Aplicaciones moviles\proyectos visual\ExamenAPI\ExamenAPI\ExamenAPI\obj\Debug\netstandard2.0\ref\ExamenAPI.dll
