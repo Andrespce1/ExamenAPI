@@ -9,54 +9,44 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-
+using Xamarin.Forms.Xaml;
+using Newtonsoft.Json;
+using ExamenAPI.Models;
 namespace ExamenAPI
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
         }
-        private string Url = "https://reqres.in/api";
-        private Models.User Users { get; set; }
+        private string Url = "https://jsonplaceholder.typicode.com/posts";
+        private Models.Post Users { get; set; }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            int userId;
-            if (int.TryParse(txtId.Text, out userId))
+            ServicePointManager.ServerCertificateValidationCallback += (s, cert, chain, sslPolicyErrors) => true;
+            using (var wc = new WebClient())
             {
-                using (var wc = new WebClient())
+                wc.Headers.Add("Content-Type", "application/json");
+                Console.WriteLine("...."+txtId.Text);
+                var json = wc.DownloadString(Url + "/" + txtId.Text);
+                var posts = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Post>(json);
+                if (posts != null)
                 {
-                    var url = $"{Url + "/users/" + txtId.Text}"; // Construir la URL completa
-                    wc.Headers.Add("Content-Type", "application/json");
-                    var json = wc.DownloadString(url);
-                    var response = Newtonsoft.Json.JsonConvert.DeserializeObject<User>(json);
-
-                    if (response != null)
-                    {
-                        txtId.Text = response.Id.ToString();
-                        txtNombre.Text = response.FirstName;
-                        txtApellido.Text = response.LastName;
-                        txtEmail.Text = response.Email;
-                        txtAvatar.Text = response.Avatar;
-                    }
-                    {
-                        txtId.Text = "";
-                        txtNombre.Text = "";
-                        txtApellido.Text = "";
-                        txtEmail.Text = "";
-                        txtAvatar.Text = "";
-                    }
+                    txtId.Text = posts.id;
+                    txtuserId.Text = posts.userId.ToString();
+                    txtTittle.Text = posts.title;
+                    txtBody.Text = posts.body;
                 }
-            }
-            else
-            {
-                txtId.Text = "";
-                txtNombre.Text = "";
-                txtApellido.Text = "";
-                txtEmail.Text = "";
-                txtAvatar.Text = "";
+                else
+                {
+                    txtId.Text = "";
+                    txtuserId.Text = "";
+                    txtTittle.Text = "";
+                    txtBody.Text = "";
+                }
             }
 
 
@@ -64,20 +54,19 @@ namespace ExamenAPI
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
+            ServicePointManager.ServerCertificateValidationCallback += (s, cert, chain, sslPolicyErrors) => true;
             using (var wc = new WebClient())
             {
                 wc.Headers.Add("Content-Type", "application/json");
-                var datos = new Models.User
+                var datos = new Models.Post
                 {
-                    Id = int.Parse(txtId.Text),
-                    FirstName = txtNombre.Text,
-                    LastName = txtApellido.Text,
-                    Email = txtEmail.Text,
-                    Avatar = txtAvatar.Text,
+                    id = txtId.Text,
+                    userId = 1,
+                    title = txtTittle.Text,
+                    body = txtBody.Text,
                 };
                 var json = Newtonsoft.Json.JsonConvert.SerializeObject(datos);
                 wc.UploadString(Url, "POST", json);
-                lblDatos.Text = "DATOS INSERTADOS CON EXITO";
             }
         }
 
@@ -86,13 +75,12 @@ namespace ExamenAPI
             using (var wc = new WebClient())
             {
                 wc.Headers.Add("Content-Type", "application/json");
-                var datos = new Models.User
+                var datos = new Models.Post
                 {
-                    Id = int.Parse(txtId.Text),
-                    FirstName = txtNombre.Text,
-                    LastName = txtApellido.Text,
-                    Email = txtEmail.Text,
-                    Avatar = txtAvatar.Text,
+                    id = txtId.Text,
+                    userId = 1,
+                    title = txtTittle.Text,
+                    body = txtBody.Text,
                 };
                 var json = Newtonsoft.Json.JsonConvert.SerializeObject(datos);
                 wc.UploadString(Url + "/" + txtId.Text, "PUT", json);
@@ -108,10 +96,9 @@ namespace ExamenAPI
                 wc.UploadString(Url + "/" + txtId.Text, "DELETE", "");
                 lblDatos.Text = "DATOS Borrados CON EXITO";
                 txtId.Text = "";
-                txtNombre.Text = "";
-                txtApellido.Text = "";
-                txtEmail.Text = "";
-                txtAvatar.Text = "";
+                txtuserId.Text = "";
+                txtTittle.Text = "";
+                txtBody.Text = "";
             }
         }
     }
